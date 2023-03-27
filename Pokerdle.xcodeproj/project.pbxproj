@@ -7,18 +7,204 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		643D6F5928916A5200CCE795 /* PokerdleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643D6F5828916A5200CCE795 /* PokerdleApp.swift */; };
+		64059AD828BE053800E04933 /* ResultsPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64059AD728BE053800E04933 /* ResultsPopupView.swift */; };
+		64059ADA28BE082D00E04933 /* HistoryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64059AD928BE082D00E04933 /* HistoryChartView.swift */; };
+		6406306928D063D400CC4301 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406306828D063D400CC4301 /* InfoView.swift */; };
+		6406306B28D0670F00CC4301 /* CardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406306A28D0670F00CC4301 /* CardRowView.swift */; };
+		6406306D28D07A2200CC4301 /* TutorialButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406306C28D07A2200CC4301 /* TutorialButtonView.swift */; };
+		6406306F28D0AC6500CC4301 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406306E28D0AC6400CC4301 /* TutorialView.swift */; };
+		6406307228D0ADAA00CC4301 /* FirstSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406307128D0ADAA00CC4301 /* FirstSlideView.swift */; };
+		64157B712978064400E61E86 /* PokerHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64157B702978064400E61E86 /* PokerHand.swift */; };
+		6417E1C228BF438200D60923 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417E1C128BF438100D60923 /* ShareButtonView.swift */; };
+		641BA83D290AD27B00F46629 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BA83C290AD27B00F46629 /* DrawerView.swift */; };
+		64226143289B859300A529EF /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226142289B859300A529EF /* GameManager.swift */; };
+		64226147289BD30D00A529EF /* PokerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64226146289BD30D00A529EF /* PokerFunctions.swift */; };
+		6429614D28F7F3F000B689FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6429614C28F7F3F000B689FC /* Extensions.swift */; };
+		6429614F28F8122F00B689FC /* MyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6429614E28F8122F00B689FC /* MyScoreView.swift */; };
+		6429615228F813D900B689FC /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6429615128F813D900B689FC /* Flags.swift */; };
+		6429615728F84EAA00B689FC /* InputNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6429615628F84EAA00B689FC /* InputNameView.swift */; };
+		6429615A28F85A2A00B689FC /* Peppermint in Frameworks */ = {isa = PBXBuildFile; productRef = 6429615928F85A2A00B689FC /* Peppermint */; };
+		6429615C28F85BE100B689FC /* Profanity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6429615B28F85BE100B689FC /* Profanity.swift */; };
+		6429615E28F8701E00B689FC /* InputCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6429615D28F8701E00B689FC /* InputCountryView.swift */; };
+		642BE6DD28E5759400BA3586 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BE6DC28E5759400BA3586 /* ErrorView.swift */; };
+		642BE6E328E5F0B700BA3586 /* gameover.wav in Resources */ = {isa = PBXBuildFile; fileRef = 642BE6E028E5F0B600BA3586 /* gameover.wav */; };
+		642BE6E628E5F10400BA3586 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642BE6E528E5F10400BA3586 /* SoundPlayer.swift */; };
+		642BE6EB28E5F25000BA3586 /* card.wav in Resources */ = {isa = PBXBuildFile; fileRef = 642BE6E728E5F25000BA3586 /* card.wav */; };
+		642BE6EC28E5F25000BA3586 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 642BE6E828E5F25000BA3586 /* lose.wav */; };
+		642BE6ED28E5F25000BA3586 /* coin2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 642BE6E928E5F25000BA3586 /* coin2.wav */; };
+		642BE6EE28E5F25000BA3586 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 642BE6EA28E5F25000BA3586 /* coin.wav */; };
+		642BE6F028E5F37D00BA3586 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 642BE6EF28E5F37D00BA3586 /* click.mp3 */; };
+		642DCA8528D9C1F800BB579F /* HistoryChartRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DCA8428D9C1F800BB579F /* HistoryChartRowView.swift */; };
+		642DCA8728DAF06F00BB579F /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DCA8628DAF06F00BB579F /* Haptics.swift */; };
+		642DCA8928DB341800BB579F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 642DCA8828DB341800BB579F /* GoogleService-Info.plist */; };
+		642DCAA028DB35E800BB579F /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DCA9F28DB35E800BB579F /* FirestoreManager.swift */; };
+		642DCAA228DB4A3D00BB579F /* PokerRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642DCAA128DB4A3C00BB579F /* PokerRound.swift */; };
+		642DCAA528DB640800BB579F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 642DCAA428DB640800BB579F /* FirebaseAuth */; };
+		642DCAA728DB640800BB579F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 642DCAA628DB640800BB579F /* FirebaseFirestore */; };
+		642DCAA928DB640800BB579F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 642DCAA828DB640800BB579F /* FirebaseFirestoreSwift */; };
+		642F075628EB2CA300DC4EB0 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F075528EB2CA300DC4EB0 /* LeaderboardView.swift */; };
+		642F075928EB39D500DC4EB0 /* FlagKit in Frameworks */ = {isa = PBXBuildFile; productRef = 642F075828EB39D500DC4EB0 /* FlagKit */; };
+		642F075B28EB44FF00DC4EB0 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642F075A28EB44FF00DC4EB0 /* UserInfo.swift */; };
+		6437F3ED291579F700CDA79A /* GroupBoxLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437F3EC291579F700CDA79A /* GroupBoxLabelView.swift */; };
+		6437F3EF29157ACD00CDA79A /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437F3EE29157ACD00CDA79A /* InfoRowView.swift */; };
+		643D6F5928916A5200CCE795 /* PokertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643D6F5828916A5200CCE795 /* PokertApp.swift */; };
 		643D6F5B28916A5200CCE795 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643D6F5A28916A5200CCE795 /* ContentView.swift */; };
 		643D6F5D28916A5400CCE795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643D6F5C28916A5400CCE795 /* Assets.xcassets */; };
 		643D6F6028916A5400CCE795 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643D6F5F28916A5400CCE795 /* Preview Assets.xcassets */; };
+		645435CD28CF61FE0090FCFD /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645435CC28CF61FE0090FCFD /* StatisticsView.swift */; };
+		645435CF28CF629F0090FCFD /* HighscoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645435CE28CF629F0090FCFD /* HighscoreView.swift */; };
+		645CEC7E28EEF69E00F7E5D6 /* Top1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEC7D28EEF69E00F7E5D6 /* Top1View.swift */; };
+		645CEC8028EF4F8300F7E5D6 /* LeaderboardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645CEC7F28EF4F8300F7E5D6 /* LeaderboardRowView.swift */; };
+		6462EA432916A34C005992A8 /* CreditsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6462EA422916A34C005992A8 /* CreditsRowView.swift */; };
+		6467C4D4291A8B6200C38748 /* PracticeGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467C4D3291A8B6200C38748 /* PracticeGameManager.swift */; };
+		6467C4D6291A8FCF00C38748 /* PracticeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467C4D5291A8FCF00C38748 /* PracticeGameView.swift */; };
+		6467C4D9291A9A0400C38748 /* PracticeDealerHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467C4D8291A9A0400C38748 /* PracticeDealerHandView.swift */; };
+		6467C4DB291A9A1F00C38748 /* PracticeTableCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467C4DA291A9A1F00C38748 /* PracticeTableCardsView.swift */; };
+		6467C4DD291A9A5400C38748 /* PracticePlayerHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467C4DC291A9A5400C38748 /* PracticePlayerHandView.swift */; };
+		646A150C28E482080059C426 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A150B28E482080059C426 /* Reachability.swift */; };
+		647C38D8291558D0001F4C1E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 647C38D7291558D0001F4C1E /* FirebaseMessaging */; };
+		648B514D291E9626000F5B10 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648B514C291E9626000F5B10 /* Launch Screen.storyboard */; };
+		6496C12528B27E5900A2FC7C /* MainGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6496C12428B27E5900A2FC7C /* MainGameView.swift */; };
+		6496C12728B2834D00A2FC7C /* DealerHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6496C12628B2834D00A2FC7C /* DealerHandView.swift */; };
+		6496C13828B2978500A2FC7C /* TableCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6496C13728B2978500A2FC7C /* TableCardsView.swift */; };
+		6496C15128B29D0E00A2FC7C /* PlayerHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6496C15028B29D0E00A2FC7C /* PlayerHandView.swift */; };
+		6496C15328B29FDD00A2FC7C /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6496C15228B29FDD00A2FC7C /* ViewModifiers.swift */; };
+		64C660A028D23C4000BD74A4 /* SecondSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C6609F28D23C4000BD74A4 /* SecondSlideView.swift */; };
+		64C660A328D23EE100BD74A4 /* FullPokerFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C660A228D23EE100BD74A4 /* FullPokerFieldView.swift */; };
+		64C79C5428D383A000B5CCAD /* ThirdSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C5328D383A000B5CCAD /* ThirdSlideView.swift */; };
+		64C79C5628D3867800B5CCAD /* BetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C5528D3867800B5CCAD /* BetView.swift */; };
+		64C79C5828D38ADE00B5CCAD /* FourthSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C5728D38ADE00B5CCAD /* FourthSlideView.swift */; };
+		64C79C5A28D38F1B00B5CCAD /* FifthSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C5928D38F1B00B5CCAD /* FifthSlideView.swift */; };
+		64C79C5C28D3914000B5CCAD /* SixthSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C5B28D3914000B5CCAD /* SixthSlideView.swift */; };
+		64C79C5E28D3927900B5CCAD /* SeventhSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C5D28D3927900B5CCAD /* SeventhSlideView.swift */; };
+		64C79C6028D3995500B5CCAD /* EighthSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C5F28D3995500B5CCAD /* EighthSlideView.swift */; };
+		64C79C6228D39BDA00B5CCAD /* ShareResultsExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C6128D39BDA00B5CCAD /* ShareResultsExampleView.swift */; };
+		64C79C6428D39F3400B5CCAD /* NinthSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C79C6328D39F3400B5CCAD /* NinthSlideView.swift */; };
+		64D6E95829100A8700959792 /* PopupTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6E95729100A8700959792 /* PopupTextView.swift */; };
+		64D6E95A291029DC00959792 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D6E959291029DC00959792 /* Leaderboard.swift */; };
+		64D99B1C29D13AA0003639BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B1B29D13AA0003639BB /* README.md */; };
+		64D99B2329D13B21003639BB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B1E29D13B21003639BB /* 4.png */; };
+		64D99B2429D13B21003639BB /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B1F29D13B21003639BB /* 2.png */; };
+		64D99B2529D13B21003639BB /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2029D13B21003639BB /* 5.png */; };
+		64D99B2629D13B21003639BB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2129D13B21003639BB /* 1.png */; };
+		64D99B2729D13B21003639BB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2229D13B21003639BB /* 3.png */; };
+		64D99B2D29D14C8E003639BB /* Leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2829D14C8D003639BB /* Leaderboard.png */; };
+		64D99B2E29D14C8E003639BB /* Practice.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2929D14C8D003639BB /* Practice.png */; };
+		64D99B2F29D14C8E003639BB /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2A29D14C8D003639BB /* Main.png */; };
+		64D99B3029D14C8E003639BB /* Statistics.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2B29D14C8E003639BB /* Statistics.png */; };
+		64D99B3129D14C8E003639BB /* Tutorial.png in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B2C29D14C8E003639BB /* Tutorial.png */; };
+		64D99B3329D14D5D003639BB /* Final 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64D99B3229D14D5D003639BB /* Final 1.mp4 */; };
+		64E5F38928DC9C3400B22FD3 /* HelveticaNeueBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F37E28DC9C3400B22FD3 /* HelveticaNeueBd.ttf */; };
+		64E5F38A28DC9C3400B22FD3 /* HelveticaNeueHv.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F37F28DC9C3400B22FD3 /* HelveticaNeueHv.ttf */; };
+		64E5F38B28DC9C3400B22FD3 /* HelveticaNeueIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38028DC9C3400B22FD3 /* HelveticaNeueIt.ttf */; };
+		64E5F38C28DC9C3400B22FD3 /* HelveticaNeue Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38128DC9C3400B22FD3 /* HelveticaNeue Light.ttf */; };
+		64E5F38D28DC9C3400B22FD3 /* HelveticaNeueLt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38228DC9C3400B22FD3 /* HelveticaNeueLt.ttf */; };
+		64E5F38E28DC9C3400B22FD3 /* HelveticaNeue BlackCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38328DC9C3400B22FD3 /* HelveticaNeue BlackCond.ttf */; };
+		64E5F38F28DC9C3400B22FD3 /* HelveticaNeueMed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38428DC9C3400B22FD3 /* HelveticaNeueMed.ttf */; };
+		64E5F39028DC9C3400B22FD3 /* HelveticaNeue Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38528DC9C3400B22FD3 /* HelveticaNeue Medium.ttf */; };
+		64E5F39128DC9C3400B22FD3 /* HelveticaNeue Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38628DC9C3400B22FD3 /* HelveticaNeue Bold.ttf */; };
+		64E5F39228DC9C3400B22FD3 /* HelveticaNeue Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38728DC9C3400B22FD3 /* HelveticaNeue Thin.ttf */; };
+		64E5F39328DC9C3400B22FD3 /* HelveticaNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E5F38828DC9C3400B22FD3 /* HelveticaNeue.ttf */; };
+		64F2444728F037F000416951 /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2444628F037EF00416951 /* ResetButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64059AD728BE053800E04933 /* ResultsPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPopupView.swift; sourceTree = "<group>"; };
+		64059AD928BE082D00E04933 /* HistoryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryChartView.swift; sourceTree = "<group>"; };
+		6406306828D063D400CC4301 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		6406306A28D0670F00CC4301 /* CardRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRowView.swift; sourceTree = "<group>"; };
+		6406306C28D07A2200CC4301 /* TutorialButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialButtonView.swift; sourceTree = "<group>"; };
+		6406306E28D0AC6400CC4301 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		6406307128D0ADAA00CC4301 /* FirstSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSlideView.swift; sourceTree = "<group>"; };
+		64157B702978064400E61E86 /* PokerHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerHand.swift; sourceTree = "<group>"; };
+		6417E1C128BF438100D60923 /* ShareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
+		641BA83C290AD27B00F46629 /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
+		64226142289B859300A529EF /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		64226146289BD30D00A529EF /* PokerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerFunctions.swift; sourceTree = "<group>"; };
+		6429614C28F7F3F000B689FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6429614E28F8122F00B689FC /* MyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScoreView.swift; sourceTree = "<group>"; };
+		6429615128F813D900B689FC /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		6429615628F84EAA00B689FC /* InputNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameView.swift; sourceTree = "<group>"; };
+		6429615B28F85BE100B689FC /* Profanity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profanity.swift; sourceTree = "<group>"; };
+		6429615D28F8701E00B689FC /* InputCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCountryView.swift; sourceTree = "<group>"; };
+		642BE6DC28E5759400BA3586 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		642BE6E028E5F0B600BA3586 /* gameover.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameover.wav; sourceTree = "<group>"; };
+		642BE6E528E5F10400BA3586 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		642BE6E728E5F25000BA3586 /* card.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card.wav; sourceTree = "<group>"; };
+		642BE6E828E5F25000BA3586 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		642BE6E928E5F25000BA3586 /* coin2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin2.wav; sourceTree = "<group>"; };
+		642BE6EA28E5F25000BA3586 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		642BE6EF28E5F37D00BA3586 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		642DCA8428D9C1F800BB579F /* HistoryChartRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryChartRowView.swift; sourceTree = "<group>"; };
+		642DCA8628DAF06F00BB579F /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		642DCA8828DB341800BB579F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		642DCA9F28DB35E800BB579F /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
+		642DCAA128DB4A3C00BB579F /* PokerRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerRound.swift; sourceTree = "<group>"; };
+		642F075528EB2CA300DC4EB0 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		642F075A28EB44FF00DC4EB0 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		6437F3EC291579F700CDA79A /* GroupBoxLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxLabelView.swift; sourceTree = "<group>"; };
+		6437F3EE29157ACD00CDA79A /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
 		643D6F5528916A5200CCE795 /* Pokerdle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokerdle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		643D6F5828916A5200CCE795 /* PokerdleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerdleApp.swift; sourceTree = "<group>"; };
+		643D6F5828916A5200CCE795 /* PokertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokertApp.swift; sourceTree = "<group>"; };
 		643D6F5A28916A5200CCE795 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		643D6F5C28916A5400CCE795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		643D6F5F28916A5400CCE795 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		645435CC28CF61FE0090FCFD /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		645435CE28CF629F0090FCFD /* HighscoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscoreView.swift; sourceTree = "<group>"; };
+		645CEC7D28EEF69E00F7E5D6 /* Top1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top1View.swift; sourceTree = "<group>"; };
+		645CEC7F28EF4F8300F7E5D6 /* LeaderboardRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardRowView.swift; sourceTree = "<group>"; };
+		6462EA422916A34C005992A8 /* CreditsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsRowView.swift; sourceTree = "<group>"; };
+		6467C4D3291A8B6200C38748 /* PracticeGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeGameManager.swift; sourceTree = "<group>"; };
+		6467C4D5291A8FCF00C38748 /* PracticeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeGameView.swift; sourceTree = "<group>"; };
+		6467C4D8291A9A0400C38748 /* PracticeDealerHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDealerHandView.swift; sourceTree = "<group>"; };
+		6467C4DA291A9A1F00C38748 /* PracticeTableCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableCardsView.swift; sourceTree = "<group>"; };
+		6467C4DC291A9A5400C38748 /* PracticePlayerHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticePlayerHandView.swift; sourceTree = "<group>"; };
+		646A150B28E482080059C426 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		648761C92912BA77006B7D5E /* Pokerdle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pokerdle.entitlements; sourceTree = "<group>"; };
+		648B514C291E9626000F5B10 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6496C12428B27E5900A2FC7C /* MainGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameView.swift; sourceTree = "<group>"; };
+		6496C12628B2834D00A2FC7C /* DealerHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealerHandView.swift; sourceTree = "<group>"; };
+		6496C13728B2978500A2FC7C /* TableCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCardsView.swift; sourceTree = "<group>"; };
+		6496C13928B2995B00A2FC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6496C15028B29D0E00A2FC7C /* PlayerHandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHandView.swift; sourceTree = "<group>"; };
+		6496C15228B29FDD00A2FC7C /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		64C6609F28D23C4000BD74A4 /* SecondSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSlideView.swift; sourceTree = "<group>"; };
+		64C660A228D23EE100BD74A4 /* FullPokerFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPokerFieldView.swift; sourceTree = "<group>"; };
+		64C79C5328D383A000B5CCAD /* ThirdSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSlideView.swift; sourceTree = "<group>"; };
+		64C79C5528D3867800B5CCAD /* BetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetView.swift; sourceTree = "<group>"; };
+		64C79C5728D38ADE00B5CCAD /* FourthSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthSlideView.swift; sourceTree = "<group>"; };
+		64C79C5928D38F1B00B5CCAD /* FifthSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthSlideView.swift; sourceTree = "<group>"; };
+		64C79C5B28D3914000B5CCAD /* SixthSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthSlideView.swift; sourceTree = "<group>"; };
+		64C79C5D28D3927900B5CCAD /* SeventhSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhSlideView.swift; sourceTree = "<group>"; };
+		64C79C5F28D3995500B5CCAD /* EighthSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthSlideView.swift; sourceTree = "<group>"; };
+		64C79C6128D39BDA00B5CCAD /* ShareResultsExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareResultsExampleView.swift; sourceTree = "<group>"; };
+		64C79C6328D39F3400B5CCAD /* NinthSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinthSlideView.swift; sourceTree = "<group>"; };
+		64D6E95729100A8700959792 /* PopupTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTextView.swift; sourceTree = "<group>"; };
+		64D6E959291029DC00959792 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		64D99B1B29D13AA0003639BB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		64D99B1E29D13B21003639BB /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		64D99B1F29D13B21003639BB /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		64D99B2029D13B21003639BB /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		64D99B2129D13B21003639BB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		64D99B2229D13B21003639BB /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		64D99B2829D14C8D003639BB /* Leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leaderboard.png; sourceTree = "<group>"; };
+		64D99B2929D14C8D003639BB /* Practice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Practice.png; sourceTree = "<group>"; };
+		64D99B2A29D14C8D003639BB /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		64D99B2B29D14C8E003639BB /* Statistics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Statistics.png; sourceTree = "<group>"; };
+		64D99B2C29D14C8E003639BB /* Tutorial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tutorial.png; sourceTree = "<group>"; };
+		64D99B3229D14D5D003639BB /* Final 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Final 1.mp4"; sourceTree = "<group>"; };
+		64E5F37E28DC9C3400B22FD3 /* HelveticaNeueBd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueBd.ttf; sourceTree = "<group>"; };
+		64E5F37F28DC9C3400B22FD3 /* HelveticaNeueHv.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueHv.ttf; sourceTree = "<group>"; };
+		64E5F38028DC9C3400B22FD3 /* HelveticaNeueIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueIt.ttf; sourceTree = "<group>"; };
+		64E5F38128DC9C3400B22FD3 /* HelveticaNeue Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue Light.ttf"; sourceTree = "<group>"; };
+		64E5F38228DC9C3400B22FD3 /* HelveticaNeueLt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueLt.ttf; sourceTree = "<group>"; };
+		64E5F38328DC9C3400B22FD3 /* HelveticaNeue BlackCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue BlackCond.ttf"; sourceTree = "<group>"; };
+		64E5F38428DC9C3400B22FD3 /* HelveticaNeueMed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeueMed.ttf; sourceTree = "<group>"; };
+		64E5F38528DC9C3400B22FD3 /* HelveticaNeue Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue Medium.ttf"; sourceTree = "<group>"; };
+		64E5F38628DC9C3400B22FD3 /* HelveticaNeue Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue Bold.ttf"; sourceTree = "<group>"; };
+		64E5F38728DC9C3400B22FD3 /* HelveticaNeue Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeue Thin.ttf"; sourceTree = "<group>"; };
+		64E5F38828DC9C3400B22FD3 /* HelveticaNeue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.ttf; sourceTree = "<group>"; };
+		64F2444628F037EF00416951 /* ResetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +212,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647C38D8291558D0001F4C1E /* FirebaseMessaging in Frameworks */,
+				642DCAA528DB640800BB579F /* FirebaseAuth in Frameworks */,
+				642F075928EB39D500DC4EB0 /* FlagKit in Frameworks */,
+				642DCAA728DB640800BB579F /* FirebaseFirestore in Frameworks */,
+				6429615A28F85A2A00B689FC /* Peppermint in Frameworks */,
+				642DCAA928DB640800BB579F /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6406307028D0AD7600CC4301 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				64C660A128D23E4F00BD74A4 /* Image Views */,
+				6406307128D0ADAA00CC4301 /* FirstSlideView.swift */,
+				64C6609F28D23C4000BD74A4 /* SecondSlideView.swift */,
+				64C79C5328D383A000B5CCAD /* ThirdSlideView.swift */,
+				64C79C5728D38ADE00B5CCAD /* FourthSlideView.swift */,
+				64C79C5928D38F1B00B5CCAD /* FifthSlideView.swift */,
+				64C79C5B28D3914000B5CCAD /* SixthSlideView.swift */,
+				64C79C5D28D3927900B5CCAD /* SeventhSlideView.swift */,
+				64C79C5F28D3995500B5CCAD /* EighthSlideView.swift */,
+				64C79C6328D39F3400B5CCAD /* NinthSlideView.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		6429615028F813CC00B689FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6429615128F813D900B689FC /* Flags.swift */,
+				6429615B28F85BE100B689FC /* Profanity.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6429615528F84E7D00B689FC /* User Info */ = {
+			isa = PBXGroup;
+			children = (
+				6429615628F84EAA00B689FC /* InputNameView.swift */,
+				6429615D28F8701E00B689FC /* InputCountryView.swift */,
+			);
+			path = "User Info";
+			sourceTree = "<group>";
+		};
+		642BE6DE28E5F0A400BA3586 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				642BE6E828E5F25000BA3586 /* lose.wav */,
+				642BE6E728E5F25000BA3586 /* card.wav */,
+				642BE6E928E5F25000BA3586 /* coin2.wav */,
+				642BE6EF28E5F37D00BA3586 /* click.mp3 */,
+				642BE6EA28E5F25000BA3586 /* coin.wav */,
+				642BE6E028E5F0B600BA3586 /* gameover.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		643D6F4C28916A5200CCE795 = {
 			isa = PBXGroup;
 			children = (
+				64D99B1D29D13AEA003639BB /* Documentation */,
 				643D6F5728916A5200CCE795 /* Pokerdle */,
 				643D6F5628916A5200CCE795 /* Products */,
+				647C38D6291558D0001F4C1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +293,23 @@
 		643D6F5728916A5200CCE795 /* Pokerdle */ = {
 			isa = PBXGroup;
 			children = (
-				643D6F5828916A5200CCE795 /* PokerdleApp.swift */,
+				648761C92912BA77006B7D5E /* Pokerdle.entitlements */,
+				6429615028F813CC00B689FC /* Data */,
+				642BE6DE28E5F0A400BA3586 /* Sounds */,
+				6496C13928B2995B00A2FC7C /* Info.plist */,
+				64E5F37D28DC9C2400B22FD3 /* Fonts */,
+				642DCA8828DB341800BB579F /* GoogleService-Info.plist */,
+				643D6F6A28916A7500CCE795 /* Utility */,
+				643D6F6928916A7000CCE795 /* Extensions */,
+				643D6F6828916A6C00CCE795 /* Views */,
+				643D6F6728916A6700CCE795 /* View Model */,
+				643D6F6628916A6200CCE795 /* Model */,
+				643D6F5828916A5200CCE795 /* PokertApp.swift */,
 				643D6F5A28916A5200CCE795 /* ContentView.swift */,
 				643D6F5C28916A5400CCE795 /* Assets.xcassets */,
 				643D6F5E28916A5400CCE795 /* Preview Content */,
+				648B514C291E9626000F5B10 /* Launch Screen.storyboard */,
+				64D99B1B29D13AA0003639BB /* README.md */,
 			);
 			path = Pokerdle;
 			sourceTree = "<group>";
@@ -65,6 +320,146 @@
 				643D6F5F28916A5400CCE795 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		643D6F6628916A6200CCE795 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				642DCAA128DB4A3C00BB579F /* PokerRound.swift */,
+				642F075A28EB44FF00DC4EB0 /* UserInfo.swift */,
+				64D6E959291029DC00959792 /* Leaderboard.swift */,
+				64157B702978064400E61E86 /* PokerHand.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		643D6F6728916A6700CCE795 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				64226142289B859300A529EF /* GameManager.swift */,
+				642DCA9F28DB35E800BB579F /* FirestoreManager.swift */,
+				6467C4D3291A8B6200C38748 /* PracticeGameManager.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		643D6F6828916A6C00CCE795 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6467C4D7291A99EE00C38748 /* Practice */,
+				6429615528F84E7D00B689FC /* User Info */,
+				6406307028D0AD7600CC4301 /* Tutorial */,
+				6496C12428B27E5900A2FC7C /* MainGameView.swift */,
+				6496C12628B2834D00A2FC7C /* DealerHandView.swift */,
+				6496C13728B2978500A2FC7C /* TableCardsView.swift */,
+				6496C15028B29D0E00A2FC7C /* PlayerHandView.swift */,
+				64059AD728BE053800E04933 /* ResultsPopupView.swift */,
+				64059AD928BE082D00E04933 /* HistoryChartView.swift */,
+				642DCA8428D9C1F800BB579F /* HistoryChartRowView.swift */,
+				6417E1C128BF438100D60923 /* ShareButtonView.swift */,
+				645435CC28CF61FE0090FCFD /* StatisticsView.swift */,
+				645435CE28CF629F0090FCFD /* HighscoreView.swift */,
+				6406306828D063D400CC4301 /* InfoView.swift */,
+				6406306A28D0670F00CC4301 /* CardRowView.swift */,
+				6406306C28D07A2200CC4301 /* TutorialButtonView.swift */,
+				6406306E28D0AC6400CC4301 /* TutorialView.swift */,
+				642BE6DC28E5759400BA3586 /* ErrorView.swift */,
+				642F075528EB2CA300DC4EB0 /* LeaderboardView.swift */,
+				645CEC7D28EEF69E00F7E5D6 /* Top1View.swift */,
+				6429614E28F8122F00B689FC /* MyScoreView.swift */,
+				645CEC7F28EF4F8300F7E5D6 /* LeaderboardRowView.swift */,
+				64F2444628F037EF00416951 /* ResetButtonView.swift */,
+				641BA83C290AD27B00F46629 /* DrawerView.swift */,
+				64D6E95729100A8700959792 /* PopupTextView.swift */,
+				6437F3EC291579F700CDA79A /* GroupBoxLabelView.swift */,
+				6437F3EE29157ACD00CDA79A /* InfoRowView.swift */,
+				6462EA422916A34C005992A8 /* CreditsRowView.swift */,
+				6467C4D5291A8FCF00C38748 /* PracticeGameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		643D6F6928916A7000CCE795 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6429614C28F7F3F000B689FC /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		643D6F6A28916A7500CCE795 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				64226146289BD30D00A529EF /* PokerFunctions.swift */,
+				6496C15228B29FDD00A2FC7C /* ViewModifiers.swift */,
+				642DCA8628DAF06F00BB579F /* Haptics.swift */,
+				646A150B28E482080059C426 /* Reachability.swift */,
+				642BE6E528E5F10400BA3586 /* SoundPlayer.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6467C4D7291A99EE00C38748 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				6467C4D8291A9A0400C38748 /* PracticeDealerHandView.swift */,
+				6467C4DA291A9A1F00C38748 /* PracticeTableCardsView.swift */,
+				6467C4DC291A9A5400C38748 /* PracticePlayerHandView.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		647C38D6291558D0001F4C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64C660A128D23E4F00BD74A4 /* Image Views */ = {
+			isa = PBXGroup;
+			children = (
+				64C660A228D23EE100BD74A4 /* FullPokerFieldView.swift */,
+				64C79C5528D3867800B5CCAD /* BetView.swift */,
+				64C79C6128D39BDA00B5CCAD /* ShareResultsExampleView.swift */,
+			);
+			path = "Image Views";
+			sourceTree = "<group>";
+		};
+		64D99B1D29D13AEA003639BB /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				64D99B2829D14C8D003639BB /* Leaderboard.png */,
+				64D99B2A29D14C8D003639BB /* Main.png */,
+				64D99B2929D14C8D003639BB /* Practice.png */,
+				64D99B2B29D14C8E003639BB /* Statistics.png */,
+				64D99B3229D14D5D003639BB /* Final 1.mp4 */,
+				64D99B2C29D14C8E003639BB /* Tutorial.png */,
+				64D99B2129D13B21003639BB /* 1.png */,
+				64D99B1F29D13B21003639BB /* 2.png */,
+				64D99B2229D13B21003639BB /* 3.png */,
+				64D99B1E29D13B21003639BB /* 4.png */,
+				64D99B2029D13B21003639BB /* 5.png */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		64E5F37D28DC9C2400B22FD3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				64E5F38328DC9C3400B22FD3 /* HelveticaNeue BlackCond.ttf */,
+				64E5F38628DC9C3400B22FD3 /* HelveticaNeue Bold.ttf */,
+				64E5F38128DC9C3400B22FD3 /* HelveticaNeue Light.ttf */,
+				64E5F38528DC9C3400B22FD3 /* HelveticaNeue Medium.ttf */,
+				64E5F38728DC9C3400B22FD3 /* HelveticaNeue Thin.ttf */,
+				64E5F38828DC9C3400B22FD3 /* HelveticaNeue.ttf */,
+				64E5F37E28DC9C3400B22FD3 /* HelveticaNeueBd.ttf */,
+				64E5F37F28DC9C3400B22FD3 /* HelveticaNeueHv.ttf */,
+				64E5F38028DC9C3400B22FD3 /* HelveticaNeueIt.ttf */,
+				64E5F38228DC9C3400B22FD3 /* HelveticaNeueLt.ttf */,
+				64E5F38428DC9C3400B22FD3 /* HelveticaNeueMed.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +478,14 @@
 			dependencies = (
 			);
 			name = Pokerdle;
+			packageProductDependencies = (
+				642DCAA428DB640800BB579F /* FirebaseAuth */,
+				642DCAA628DB640800BB579F /* FirebaseFirestore */,
+				642DCAA828DB640800BB579F /* FirebaseFirestoreSwift */,
+				642F075828EB39D500DC4EB0 /* FlagKit */,
+				6429615928F85A2A00B689FC /* Peppermint */,
+				647C38D7291558D0001F4C1E /* FirebaseMessaging */,
+			);
 			productName = Pokerdle;
 			productReference = 643D6F5528916A5200CCE795 /* Pokerdle.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +514,11 @@
 				Base,
 			);
 			mainGroup = 643D6F4C28916A5200CCE795;
+			packageReferences = (
+				642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				642F075728EB39D500DC4EB0 /* XCRemoteSwiftPackageReference "FlagKit" */,
+				6429615828F85A2A00B689FC /* XCRemoteSwiftPackageReference "peppermint" */,
+			);
 			productRefGroup = 643D6F5628916A5200CCE795 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +533,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D99B3329D14D5D003639BB /* Final 1.mp4 in Resources */,
+				64E5F38F28DC9C3400B22FD3 /* HelveticaNeueMed.ttf in Resources */,
+				64E5F38B28DC9C3400B22FD3 /* HelveticaNeueIt.ttf in Resources */,
+				64E5F38D28DC9C3400B22FD3 /* HelveticaNeueLt.ttf in Resources */,
+				642BE6EE28E5F25000BA3586 /* coin.wav in Resources */,
+				642BE6E328E5F0B700BA3586 /* gameover.wav in Resources */,
+				64D99B2629D13B21003639BB /* 1.png in Resources */,
+				64E5F39028DC9C3400B22FD3 /* HelveticaNeue Medium.ttf in Resources */,
+				648B514D291E9626000F5B10 /* Launch Screen.storyboard in Resources */,
 				643D6F6028916A5400CCE795 /* Preview Assets.xcassets in Resources */,
+				64E5F38E28DC9C3400B22FD3 /* HelveticaNeue BlackCond.ttf in Resources */,
+				64E5F38C28DC9C3400B22FD3 /* HelveticaNeue Light.ttf in Resources */,
+				64E5F39228DC9C3400B22FD3 /* HelveticaNeue Thin.ttf in Resources */,
+				64D99B2F29D14C8E003639BB /* Main.png in Resources */,
+				64D99B2729D13B21003639BB /* 3.png in Resources */,
+				64D99B2529D13B21003639BB /* 5.png in Resources */,
 				643D6F5D28916A5400CCE795 /* Assets.xcassets in Resources */,
+				64D99B2E29D14C8E003639BB /* Practice.png in Resources */,
+				642BE6EC28E5F25000BA3586 /* lose.wav in Resources */,
+				642DCA8928DB341800BB579F /* GoogleService-Info.plist in Resources */,
+				64D99B3129D14C8E003639BB /* Tutorial.png in Resources */,
+				642BE6F028E5F37D00BA3586 /* click.mp3 in Resources */,
+				64E5F39128DC9C3400B22FD3 /* HelveticaNeue Bold.ttf in Resources */,
+				64D99B3029D14C8E003639BB /* Statistics.png in Resources */,
+				642BE6ED28E5F25000BA3586 /* coin2.wav in Resources */,
+				64E5F38928DC9C3400B22FD3 /* HelveticaNeueBd.ttf in Resources */,
+				64D99B2429D13B21003639BB /* 2.png in Resources */,
+				64D99B2329D13B21003639BB /* 4.png in Resources */,
+				64D99B2D29D14C8E003639BB /* Leaderboard.png in Resources */,
+				642BE6EB28E5F25000BA3586 /* card.wav in Resources */,
+				64E5F38A28DC9C3400B22FD3 /* HelveticaNeueHv.ttf in Resources */,
+				64D99B1C29D13AA0003639BB /* README.md in Resources */,
+				64E5F39328DC9C3400B22FD3 /* HelveticaNeue.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +576,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6429615E28F8701E00B689FC /* InputCountryView.swift in Sources */,
 				643D6F5B28916A5200CCE795 /* ContentView.swift in Sources */,
-				643D6F5928916A5200CCE795 /* PokerdleApp.swift in Sources */,
+				64226147289BD30D00A529EF /* PokerFunctions.swift in Sources */,
+				6437F3ED291579F700CDA79A /* GroupBoxLabelView.swift in Sources */,
+				6462EA432916A34C005992A8 /* CreditsRowView.swift in Sources */,
+				6406306F28D0AC6500CC4301 /* TutorialView.swift in Sources */,
+				6496C15128B29D0E00A2FC7C /* PlayerHandView.swift in Sources */,
+				64C79C5E28D3927900B5CCAD /* SeventhSlideView.swift in Sources */,
+				64C660A028D23C4000BD74A4 /* SecondSlideView.swift in Sources */,
+				641BA83D290AD27B00F46629 /* DrawerView.swift in Sources */,
+				64C79C6228D39BDA00B5CCAD /* ShareResultsExampleView.swift in Sources */,
+				6467C4D4291A8B6200C38748 /* PracticeGameManager.swift in Sources */,
+				642BE6DD28E5759400BA3586 /* ErrorView.swift in Sources */,
+				645CEC7E28EEF69E00F7E5D6 /* Top1View.swift in Sources */,
+				6496C15328B29FDD00A2FC7C /* ViewModifiers.swift in Sources */,
+				6429615C28F85BE100B689FC /* Profanity.swift in Sources */,
+				6496C13828B2978500A2FC7C /* TableCardsView.swift in Sources */,
+				64D6E95829100A8700959792 /* PopupTextView.swift in Sources */,
+				645435CF28CF629F0090FCFD /* HighscoreView.swift in Sources */,
+				642DCAA028DB35E800BB579F /* FirestoreManager.swift in Sources */,
+				6406307228D0ADAA00CC4301 /* FirstSlideView.swift in Sources */,
+				645435CD28CF61FE0090FCFD /* StatisticsView.swift in Sources */,
+				642BE6E628E5F10400BA3586 /* SoundPlayer.swift in Sources */,
+				64C79C5A28D38F1B00B5CCAD /* FifthSlideView.swift in Sources */,
+				6467C4DB291A9A1F00C38748 /* PracticeTableCardsView.swift in Sources */,
+				6467C4D9291A9A0400C38748 /* PracticeDealerHandView.swift in Sources */,
+				6437F3EF29157ACD00CDA79A /* InfoRowView.swift in Sources */,
+				6496C12728B2834D00A2FC7C /* DealerHandView.swift in Sources */,
+				6417E1C228BF438200D60923 /* ShareButtonView.swift in Sources */,
+				6429614D28F7F3F000B689FC /* Extensions.swift in Sources */,
+				64C79C5428D383A000B5CCAD /* ThirdSlideView.swift in Sources */,
+				6406306B28D0670F00CC4301 /* CardRowView.swift in Sources */,
+				642DCA8528D9C1F800BB579F /* HistoryChartRowView.swift in Sources */,
+				64059ADA28BE082D00E04933 /* HistoryChartView.swift in Sources */,
+				64D6E95A291029DC00959792 /* Leaderboard.swift in Sources */,
+				64226143289B859300A529EF /* GameManager.swift in Sources */,
+				642DCA8728DAF06F00BB579F /* Haptics.swift in Sources */,
+				64C79C5C28D3914000B5CCAD /* SixthSlideView.swift in Sources */,
+				643D6F5928916A5200CCE795 /* PokertApp.swift in Sources */,
+				642DCAA228DB4A3D00BB579F /* PokerRound.swift in Sources */,
+				64C79C6028D3995500B5CCAD /* EighthSlideView.swift in Sources */,
+				6467C4DD291A9A5400C38748 /* PracticePlayerHandView.swift in Sources */,
+				6429615728F84EAA00B689FC /* InputNameView.swift in Sources */,
+				64059AD828BE053800E04933 /* ResultsPopupView.swift in Sources */,
+				6467C4D6291A8FCF00C38748 /* PracticeGameView.swift in Sources */,
+				64C79C5628D3867800B5CCAD /* BetView.swift in Sources */,
+				646A150C28E482080059C426 /* Reachability.swift in Sources */,
+				6429614F28F8122F00B689FC /* MyScoreView.swift in Sources */,
+				6406306928D063D400CC4301 /* InfoView.swift in Sources */,
+				64C79C5828D38ADE00B5CCAD /* FourthSlideView.swift in Sources */,
+				64157B712978064400E61E86 /* PokerHand.swift in Sources */,
+				64C79C6428D39F3400B5CCAD /* NinthSlideView.swift in Sources */,
+				642F075B28EB44FF00DC4EB0 /* UserInfo.swift in Sources */,
+				645CEC8028EF4F8300F7E5D6 /* LeaderboardRowView.swift in Sources */,
+				642F075628EB2CA300DC4EB0 /* LeaderboardView.swift in Sources */,
+				64C660A328D23EE100BD74A4 /* FullPokerFieldView.swift in Sources */,
+				6496C12528B27E5900A2FC7C /* MainGameView.swift in Sources */,
+				6429615228F813D900B689FC /* Flags.swift in Sources */,
+				64F2444728F037F000416951 /* ResetButtonView.swift in Sources */,
+				6406306D28D07A2200CC4301 /* TutorialButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,17 +761,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pokerdle/Pokerdle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pokerdle/Preview Content\"";
 				DEVELOPMENT_TEAM = 453J5S23QT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokerdle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pokert;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.casino-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,17 +796,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pokerdle/Pokerdle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pokerdle/Preview Content\"";
 				DEVELOPMENT_TEAM = 453J5S23QT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokerdle/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pokert;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.casino-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +848,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6429615828F85A2A00B689FC /* XCRemoteSwiftPackageReference "peppermint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nsagora/peppermint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		642F075728EB39D500DC4EB0 /* XCRemoteSwiftPackageReference "FlagKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/madebybowtie/FlagKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6429615928F85A2A00B689FC /* Peppermint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6429615828F85A2A00B689FC /* XCRemoteSwiftPackageReference "peppermint" */;
+			productName = Peppermint;
+		};
+		642DCAA428DB640800BB579F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		642DCAA628DB640800BB579F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		642DCAA828DB640800BB579F /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		642F075828EB39D500DC4EB0 /* FlagKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642F075728EB39D500DC4EB0 /* XCRemoteSwiftPackageReference "FlagKit" */;
+			productName = FlagKit;
+		};
+		647C38D7291558D0001F4C1E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 643D6F4D28916A5200CCE795 /* Project object */;
 }
