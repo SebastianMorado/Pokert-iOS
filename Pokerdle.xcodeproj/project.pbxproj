@@ -275,6 +275,7 @@
 		643D6F4C28916A5200CCE795 = {
 			isa = PBXGroup;
 			children = (
+				64D99B1B29D13AA0003639BB /* README.md */,
 				64D99B1D29D13AEA003639BB /* Documentation */,
 				643D6F5728916A5200CCE795 /* Pokerdle */,
 				643D6F5628916A5200CCE795 /* Products */,
@@ -309,7 +310,6 @@
 				643D6F5C28916A5400CCE795 /* Assets.xcassets */,
 				643D6F5E28916A5400CCE795 /* Preview Content */,
 				648B514C291E9626000F5B10 /* Launch Screen.storyboard */,
-				64D99B1B29D13AA0003639BB /* README.md */,
 			);
 			path = Pokerdle;
 			sourceTree = "<group>";
