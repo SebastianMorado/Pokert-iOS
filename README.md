@@ -1,6 +1,6 @@
 # Pokert iOS
 
-<img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/1.png" height="400"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/2.png" height="400"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/3.png" height="400"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/4.png" height="400"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/5.png" height="400">
+<img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/1.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/2.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/3.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/4.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/5.png" height="350">
 
 ## What is it?
 
