@@ -1,6 +1,6 @@
 # Pokert iOS
 
-<img src="" height="700">
+<img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/1.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/2.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/3.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/4.png" height="350"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/5.png" height="350">
 
 ## What is it?
 
@@ -10,19 +10,19 @@ Pokert is a free and fun daily puzzle game. Similar to games like Wordle, all us
 
 1. Simple design and mechanics make it easy and fun for anyone to play!
 
-<img src="" height="700">
+<img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/Main.png" height="400">
 
 2. Check out how well you are playing through the statistics tab. This is also your chance to brag to your friends!
 
-<img src="" height="700">
+<img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/Statistics.png" height="400">
 
 3. Compete globally and represent your country through the leaderboards!
 
-<img src="" height="700">
+<img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/Leaderboard.png" height="400">
 
 4. If you want to learn how to play better, than use Practice mode and go through the tutorial!
 
-<img src="" height="700"> <img src="" height="700">
+<img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/Tutorial.png" height="400"> <img src="https://github.com/SebastianMorado/Pokert-iOS/blob/main/Documentation/Practice.png" height="400">
 
 ## Additional Info
 
