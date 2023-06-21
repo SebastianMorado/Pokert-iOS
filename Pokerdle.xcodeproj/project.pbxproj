@@ -14,6 +14,10 @@
 		6406306D28D07A2200CC4301 /* TutorialButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406306C28D07A2200CC4301 /* TutorialButtonView.swift */; };
 		6406306F28D0AC6500CC4301 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406306E28D0AC6400CC4301 /* TutorialView.swift */; };
 		6406307228D0ADAA00CC4301 /* FirstSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406307128D0ADAA00CC4301 /* FirstSlideView.swift */; };
+		640E816D2A14ADA300477DDC /* PokerdleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E816C2A14ADA300477DDC /* PokerdleTests.swift */; };
+		640E81752A14B47500477DDC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E81742A14B47500477DDC /* NetworkMonitor.swift */; };
+		640E81772A14D57F00477DDC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 640E81762A14D57F00477DDC /* FirebaseFirestore */; };
+		640E81792A14D58400477DDC /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 640E81782A14D58400477DDC /* FirebaseMessaging */; };
 		64157B712978064400E61E86 /* PokerHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64157B702978064400E61E86 /* PokerHand.swift */; };
 		6417E1C228BF438200D60923 /* ShareButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417E1C128BF438100D60923 /* ShareButtonView.swift */; };
 		641BA83D290AD27B00F46629 /* DrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BA83C290AD27B00F46629 /* DrawerView.swift */; };
@@ -108,6 +112,16 @@
 		64F2444728F037F000416951 /* ResetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2444628F037EF00416951 /* ResetButtonView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		640E816E2A14ADA300477DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 643D6F4D28916A5200CCE795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 643D6F5428916A5200CCE795;
+			remoteInfo = Pokerdle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		64059AD728BE053800E04933 /* ResultsPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPopupView.swift; sourceTree = "<group>"; };
 		64059AD928BE082D00E04933 /* HistoryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryChartView.swift; sourceTree = "<group>"; };
@@ -116,6 +130,9 @@
 		6406306C28D07A2200CC4301 /* TutorialButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialButtonView.swift; sourceTree = "<group>"; };
 		6406306E28D0AC6400CC4301 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		6406307128D0ADAA00CC4301 /* FirstSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSlideView.swift; sourceTree = "<group>"; };
+		640E816A2A14ADA300477DDC /* PokerdleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerdleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		640E816C2A14ADA300477DDC /* PokerdleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerdleTests.swift; sourceTree = "<group>"; };
+		640E81742A14B47500477DDC /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		64157B702978064400E61E86 /* PokerHand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerHand.swift; sourceTree = "<group>"; };
 		6417E1C128BF438100D60923 /* ShareButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonView.swift; sourceTree = "<group>"; };
 		641BA83C290AD27B00F46629 /* DrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerView.swift; sourceTree = "<group>"; };
@@ -208,6 +225,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		640E81672A14ADA300477DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640E81792A14D58400477DDC /* FirebaseMessaging in Frameworks */,
+				640E81772A14D57F00477DDC /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643D6F5228916A5200CCE795 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,6 +265,22 @@
 				64C79C6328D39F3400B5CCAD /* NinthSlideView.swift */,
 			);
 			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		640E816B2A14ADA300477DDC /* PokerdleTests */ = {
+			isa = PBXGroup;
+			children = (
+				640E816C2A14ADA300477DDC /* PokerdleTests.swift */,
+			);
+			path = PokerdleTests;
+			sourceTree = "<group>";
+		};
+		640E81732A14B46400477DDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				640E81742A14B47500477DDC /* NetworkMonitor.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6429615028F813CC00B689FC /* Data */ = {
@@ -278,6 +320,7 @@
 				64D99B1B29D13AA0003639BB /* README.md */,
 				64D99B1D29D13AEA003639BB /* Documentation */,
 				643D6F5728916A5200CCE795 /* Pokerdle */,
+				640E816B2A14ADA300477DDC /* PokerdleTests */,
 				643D6F5628916A5200CCE795 /* Products */,
 				647C38D6291558D0001F4C1E /* Frameworks */,
 			);
@@ -287,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				643D6F5528916A5200CCE795 /* Pokerdle.app */,
+				640E816A2A14ADA300477DDC /* PokerdleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +345,7 @@
 				64E5F37D28DC9C2400B22FD3 /* Fonts */,
 				642DCA8828DB341800BB579F /* GoogleService-Info.plist */,
 				643D6F6A28916A7500CCE795 /* Utility */,
+				640E81732A14B46400477DDC /* Supporting Files */,
 				643D6F6928916A7000CCE795 /* Extensions */,
 				643D6F6828916A6C00CCE795 /* Views */,
 				643D6F6728916A6700CCE795 /* View Model */,
@@ -465,6 +510,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		640E81692A14ADA300477DDC /* PokerdleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 640E81722A14ADA300477DDC /* Build configuration list for PBXNativeTarget "PokerdleTests" */;
+			buildPhases = (
+				640E81662A14ADA300477DDC /* Sources */,
+				640E81672A14ADA300477DDC /* Frameworks */,
+				640E81682A14ADA300477DDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				640E816F2A14ADA300477DDC /* PBXTargetDependency */,
+			);
+			name = PokerdleTests;
+			packageProductDependencies = (
+				640E81762A14D57F00477DDC /* FirebaseFirestore */,
+				640E81782A14D58400477DDC /* FirebaseMessaging */,
+			);
+			productName = PokerdleTests;
+			productReference = 640E816A2A14ADA300477DDC /* PokerdleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		643D6F5428916A5200CCE795 /* Pokerdle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 643D6F6328916A5400CCE795 /* Build configuration list for PBXNativeTarget "Pokerdle" */;
@@ -497,9 +564,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					640E81692A14ADA300477DDC = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 643D6F5428916A5200CCE795;
+					};
 					643D6F5428916A5200CCE795 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -524,11 +595,19 @@
 			projectRoot = "";
 			targets = (
 				643D6F5428916A5200CCE795 /* Pokerdle */,
+				640E81692A14ADA300477DDC /* PokerdleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		640E81682A14ADA300477DDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643D6F5328916A5200CCE795 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -572,6 +651,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		640E81662A14ADA300477DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640E816D2A14ADA300477DDC /* PokerdleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643D6F5128916A5200CCE795 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -609,6 +696,7 @@
 				64C79C5428D383A000B5CCAD /* ThirdSlideView.swift in Sources */,
 				6406306B28D0670F00CC4301 /* CardRowView.swift in Sources */,
 				642DCA8528D9C1F800BB579F /* HistoryChartRowView.swift in Sources */,
+				640E81752A14B47500477DDC /* NetworkMonitor.swift in Sources */,
 				64059ADA28BE082D00E04933 /* HistoryChartView.swift in Sources */,
 				64D6E95A291029DC00959792 /* Leaderboard.swift in Sources */,
 				64226143289B859300A529EF /* GameManager.swift in Sources */,
@@ -641,7 +729,61 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		640E816F2A14ADA300477DDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 643D6F5428916A5200CCE795 /* Pokerdle */;
+			targetProxy = 640E816E2A14ADA300477DDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		640E81702A14ADA300477DDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 453J5S23QT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shmorado.PokerdleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokerdle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokerdle";
+			};
+			name = Debug;
+		};
+		640E81712A14ADA300477DDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 453J5S23QT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shmorado.PokerdleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokerdle.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pokerdle";
+			};
+			name = Release;
+		};
 		643D6F6128916A5400CCE795 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -829,6 +971,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		640E81722A14ADA300477DDC /* Build configuration list for PBXNativeTarget "PokerdleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				640E81702A14ADA300477DDC /* Debug */,
+				640E81712A14ADA300477DDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		643D6F5028916A5200CCE795 /* Build configuration list for PBXProject "Pokerdle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -877,6 +1028,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		640E81762A14D57F00477DDC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		640E81782A14D58400477DDC /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642DCAA328DB640800BB579F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
 		6429615928F85A2A00B689FC /* Peppermint */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6429615828F85A2A00B689FC /* XCRemoteSwiftPackageReference "peppermint" */;

@@ -14,11 +14,15 @@ enum FirestoreError: Error {
 }
 
 class FirestoreManager: ObservableObject {
+	static let shared : FirestoreManager = FirestoreManager()
     let currentPokerRound = PassthroughSubject<Result<PokerRound, FirestoreError>, Never>()
     let leaderboard = PassthroughSubject<Result<[UserInfo], FirestoreError>, Never>()
     let currentVersion = PassthroughSubject<FirestoreError, Never>()
+	
+	private init () {}
     
     func getLatestRound() {
+		
         let db = Firestore.firestore()
         let dateToSearch = createDateString()
         let docRef = db.collection("rounds").document(dateToSearch)

@@ -68,14 +68,6 @@ class PokerFunctions {
         
     }
 
-    let testHands = [
-        ["AC", "5C", "TC", "7C", "3C", "KS", "QS"],
-        ["2C", "3D", "4S", "5H", "2D", "7C", "8D"],
-        ["2C", "3D", "4S", "3H", "2D", "5H", "5D"],
-        ["5S", "4C", "AD", "4S", "4H", "AS", "5H"],
-        ["AS", "KS", "JS", "QS", "TS", "9S", "8S"]
-    ]
-
     func handDist(hand: [String]) -> [Int: Int] {
         var dist = [Int: Int]()
         for i in 1...14 {
@@ -109,7 +101,7 @@ class PokerFunctions {
     func cardCount(hand: [String], num: Int) -> [Int]? {
         let dist = handDist(hand: hand)
         var resultList = [Int]()
-        for i in 2...14 {
+		for i in (2...14).reversed() {
             if dist[i] == num {
                 resultList.append(i)
             }
@@ -119,7 +111,7 @@ class PokerFunctions {
     }
     
     //(Int, Int) returns (Power of hand, high card)
-    func handRating(hand: [String]) -> (Int, Int) {
+    func handRating(hand: [String]) -> (Int, [Int]) {
         //cache some results
         let arrayOfHighestRankCardInStraights = straightHighCard(hand: hand)
         let highCardFlush = isFlush(hand: hand)
@@ -127,27 +119,29 @@ class PokerFunctions {
         let pairs = cardCount(hand: hand, num: 2)
         
         if let arrayOfHighestRankCardInStraights, let highCardFlush, arrayOfHighestRankCardInStraights.contains(highCardFlush) {
-            return (8, highCardFlush)
+            return (8, [highCardFlush])
         } else if let highCardQuad = cardCount(hand: hand, num: 4)?.max() {
-            return (7, highCardQuad)
+            return (7, [highCardQuad])
         } else if let highCardFullHouse = cardCount(hand: hand, num: 3)?.max(), let _ = pairs {
-            return (6, highCardFullHouse)
+            return (6, [highCardFullHouse])
         } else if let high = highCardFlush {
-            return (5, high)
+            return (5, [high])
         } else if let highCardStraightInArray = arrayOfHighestRankCardInStraights?.max() {
-            return (4, highCardStraightInArray)
+            return (4, [highCardStraightInArray])
         } else if let highCardTrips = cardCount(hand: hand, num: 3)?.max() {
-            return (3, highCardTrips)
+            return (3, [highCardTrips])
         } else if let highCardTwoPair = pairs, highCardTwoPair.count >= 2 {
-            return (2, highCardTwoPair.max()!)
+			let remainingRanks = cardCount(hand: hand, num: 1) ?? []
+			return (2, highCardTwoPair + remainingRanks)
         } else if let highCardPair = pairs, highCardPair.count == 1 {
-            return (1, highCardPair[0])
+			let remainingRanks = cardCount(hand: hand, num: 1) ?? []
+            return (1, highCardPair + remainingRanks)
         } else {
-            return (0, highCard)
+            return (0, [highCard])
         }
     }
     
-    func getHandRatingString(handRating : (Int, Int)) -> String {
+    func getHandRatingString(handRating : (Int, [Int])) -> String {
         switch handRating.0 {
         case 0:
             return "(high card)"
@@ -166,7 +160,7 @@ class PokerFunctions {
         case 7:
             return "(four of a kind)"
         case 8:
-            if handRating.1 == 14 {
+			if handRating.1.first! == 14 {
                 return "(royal flush)"
             } else {
                 return "(straight flush)"
@@ -208,11 +202,15 @@ class PokerFunctions {
         } else if myHandRating.0 < dealerHandRating.0 {
             result = -1
         } else {
-            if myHandRating.1 > dealerHandRating.1 {
-                result = 1
-            } else if myHandRating.1 < dealerHandRating.1 {
-                result = -1
-            }
+			for (me, dealer) in zip(myHandRating.1, dealerHandRating.1) {
+				if me > dealer {
+					result = 1
+					break
+				} else if me < dealer {
+					result = -1
+					break
+				}
+			}
         }
         
         let handResults = HandResults(playerHandRating: myHandRating, dealerHandRating: dealerHandRating, netgain: didFold ? -bet : bet * result, result: result, didFold: didFold)
@@ -243,14 +241,14 @@ class PokerFunctions {
 
 
 class HandResults {
-    var playerHandRating : (Int, Int)
-    var dealerHandRating : (Int, Int)
+    var playerHandRating : (Int, [Int])
+    var dealerHandRating : (Int, [Int])
     var netGain : Int
     var result : Int
     var didFold : Bool
     var playRating : PlayRating?
     
-    init(playerHandRating: (Int, Int), dealerHandRating: (Int, Int), netgain: Int, result: Int, didFold: Bool) {
+    init(playerHandRating: (Int, [Int]), dealerHandRating: (Int, [Int]), netgain: Int, result: Int, didFold: Bool) {
         self.playerHandRating = playerHandRating
         self.dealerHandRating = dealerHandRating
         self.netGain = netgain

@@ -25,7 +25,7 @@ class GameManager: ObservableObject {
     let version : String = "1.0"
     
     //Firestore Manager -----------------------------------
-    var firestoreManager : FirestoreManager = FirestoreManager()
+	var firestoreManager : FirestoreManager = FirestoreManager.shared
     var disposeBag = Set<AnyCancellable>()
     @Published var topUsersInLeaderboard : [UserInfo] = []
     //Saved data ----------------------------------
@@ -178,7 +178,7 @@ class GameManager: ObservableObject {
             currentChips = 100
         }
         
-        firestoreManager.currentPokerRound
+		firestoreManager.currentPokerRound
             .sink { result in
                 switch result{
                 case .success(let pokerRound):
